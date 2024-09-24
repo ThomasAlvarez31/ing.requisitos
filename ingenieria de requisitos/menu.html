@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ficha de Colaborador</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+.required::after {
+  content: " *";
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1> Ficha de Colaborador N° XXX</h1> 
+
+<table>
+  <tr>
+    <td>Fecha de ingreso: <input type="date" name="fecha_ingreso" required></td>
+    <td>Nombre de quien crea la ficha: <input type="text" name="creador_ficha" required></td>
+  </tr>
+</table>
+
+<h2>IDENTIFICACION DE COLABORADOR</h2>
+<table>
+  <tr>
+    <td>Nombre: <input type="text" name="nombre" required></td>
+    <td>Apellido Paterno: <input type="text" name="apellido_paterno" required></td>
+  </tr>
+  <tr>
+    <td>RUT: <input type="text" name="rut" required></td>
+    <td>Apellido Materno: <input type="text" name="apellido_materno"></td>
+  </tr>
+  <tr>
+    <td>Estado Civil: 
+      <select name="estado_civil">
+        <option value="">--Seleccionar--</option>
+        <option value="soltero">Soltero(a)</option>
+        <option value="casado">Casado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="viudo">Viudo(a)</option>
+      </select>
+    </td>
+    <td>Sexo: 
+      <input type="radio" name="sexo" value="masculino" required> Masculino
+      <input type="radio" name="sexo" value="femenino" required> Femenino
+    </td>
+  </tr>
+  <tr>
+    <td>Domicilio: <input type="text" name="domicilio"></td>
+    <td>Fecha Nacimiento: <input type="date" name="fecha_nacimiento"></td>
+  </tr>
+  <tr>
+    <td>Teléfono: <input type="tel" name="telefono"></td>
+    <td>Comuna: <input type="text" name="comuna"></td>
+  </tr>
+  <tr>
+    <td colspan="2">Email institucional: <input type="email" name="email"></td>
+  </tr>
+</table>
+
+<h2>IDENTIFICACION DE CONTACTO</h2>
+<table>
+  <tr>
+    <td>Nombre: <input type="text" name="contacto_nombre"></td>
+    <td>Apellido Materno: <input type="text" name="contacto_apellido_materno"></td>
+  </tr>
+  <tr>
+    <td>Apellido Paterno: <input type="text" name="contacto_apellido_paterno"></td>
+    <td>Teléfono: <input type="tel" name="contacto_telefono"></td>
+  </tr>
+  <tr>
+    <td>RUT: <input type="text" name="contacto_rut"></td>
+    <td>Email: <input type="email" name="contacto_email"></td>
+  </tr>
+  <tr>
+    <td colspan="2">Grado de Parentesco: <input type="text" name="contacto_parentesco"></td>
+  </tr>
+</table>
+
+<h2>CARGO</h2>
+<table>
+  <tr>
+    <td colspan="2">Nombre del cargo: <input type="text" name="cargo" required></td>
+  </tr>
+  <tr>
+    <td colspan="2">Departamento al que pertenece: <input type="text" name="departamento"></td>
+  </tr>
+  <tr>
+    <td colspan="2">Nivel de Escolaridad: 
+      <select name="nivel_escolaridad">
+        <option value="">--Seleccionar--</option>
+        <option value="basica">Básica</option>
+        <option value="media">Media</option>
+        <option value="tecnica">Técnica</option>
+        <option value="universitaria">Universitaria</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">Profesión (si corresponde): <input type="text" name="profesion"></td>
+  
